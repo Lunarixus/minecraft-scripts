@@ -16,6 +16,7 @@ do
         if [ "$count" -eq "0" ]; then
             then
                 echo "Script has been ran for the first time, skipping backup."
+		((count=count+1))
             else
                 echo "Server is running!"
                 echo "Starting backup on day $date at time $time"

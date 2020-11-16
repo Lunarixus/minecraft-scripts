@@ -30,6 +30,7 @@ do
 	# Abort if java instance isn't found
         echo "Server is not running!"
         echo "Skipping backup on day $date at time $time"
+	exit 1
     fi
     # Sleep for 1 hour
     sleep 1h
